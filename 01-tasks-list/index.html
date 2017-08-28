@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task List</title>
+    <meta name="description" content="Task List">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        main {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        main section {
+            flex: 1 1 auto;
+            padding: 1.5rem;
+            border: 0.05rem solid;
+        }
+
+        section:nth-child(2) {
+            background: cornsilk;
+        }
+
+        ul {
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+
+<main>
+
+    <section>
+
+        <h1>Tasks</h1>
+
+        <ul>
+            <li v-for="(task, i) in tasks">{{i+1}}) {{task.name}}</li>
+        </ul>
+
+        <label for="intask">Task</label>
+        <input id="intask" v-model="task" @keyup.enter="addTask">
+        <button @click="addTask">Add</button>
+
+        <form @submit.prevent="addTask">
+            <label for="intask1">Task Form</label>
+            <input id="intask1" v-model="task">
+            <button>Submit</button>
+        </form>
+
+    </section>
+
+    <section>
+
+        <h2>Data</h2>
+        <pre>{{$data}}</pre>
+
+    </section>
+
+</main>
+
+<script src="https://unpkg.com/vue"></script>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
