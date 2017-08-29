@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task List</title>
+    <meta name="description" content="Word List">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        main {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        main section {
+            flex: 1 1 auto;
+            padding: 1.5rem;
+            border: 0.05rem solid;
+        }
+
+        section:nth-child(2) {
+            background: cornsilk;
+        }
+    </style>
+</head>
+<body>
+
+<main>
+
+    <section>
+
+        <h1>Words</h1>
+
+        <label for="filterIn">Filter</label>
+        <input id="filterIn" v-model="wordFilter">
+
+        <h3 v-for="(w, i) in wordsFiltered">{{i+1}}) {{w.value}} ({{w.characters}})</h3>
+
+        <h3 v-if="wordsFiltered < 1">Not found</h3>
+
+        <h3 v-if="wordFilter">Filter Reverse {{filterReverse}}</h3>
+
+    </section>
+
+    <section>
+
+        <h2>Data</h2>
+        <pre>{{$data}}</pre>
+
+    </section>
+
+</main>
+
+<script src="https://unpkg.com/vue"></script>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "01-words-list",
+  "version": "1.0.0",
+  "description": "Words list",
+  "author": "Alejandro Niño <alejandro6230@gmail.com>",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python -m SimpleHTTPServer"
+  },
+  "keywords": [
+    "vuejs"
+  ],
+  "license": "ISC"
+}
