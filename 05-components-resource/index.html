@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Components / Resources</title>
+    <meta name="description" content="Task List">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        main {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        main section {
+            flex: 1 1 auto;
+            padding: 1.5rem;
+            border: 0.05rem solid;
+        }
+
+        section:nth-child(2) {
+            background: cornsilk;
+        }
+
+    </style>
+</head>
+<body>
+
+<main>
+
+    <section>
+
+        <h1>People ({{usersData.length}})</h1>
+
+        <users-list :users="usersData"></users-list>
+
+    </section>
+
+    <section>
+
+        <h2>Data</h2>
+        <pre>{{$data}}</pre>
+
+    </section>
+
+</main>
+
+<script src="https://unpkg.com/vue"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue-resource@1.3.4"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
