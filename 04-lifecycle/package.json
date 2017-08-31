@@ -1,0 +1,14 @@
+{
+  "name": "04-lifecycle",
+  "version": "1.0.0",
+  "description": "Vuejs Lifecycle",
+  "author": "Alejandro Niño <alejandro6230@gmail.com>",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python -m SimpleHTTPServer"
+  },
+  "keywords": [
+    "vuejs"
+  ],
+  "license": "ISC"
+}

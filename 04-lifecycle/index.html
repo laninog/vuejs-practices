@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task List</title>
+    <meta name="description" content="Task List">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        main {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        main section {
+            flex: 1 1 auto;
+            padding: 1.5rem;
+            border: 0.05rem solid;
+        }
+
+        section:nth-child(2) {
+            background: cornsilk;
+        }
+
+    </style>
+</head>
+<body>
+
+<main>
+
+    <section>
+
+        <h1>Lifecycle</h1>
+
+        <h3>Check browser tools</h3>
+
+        <p>{{exampleText}}</p>
+
+        <button @click="changeData">Update Data</button>
+
+    </section>
+
+    <section>
+
+        <h2>Data</h2>
+        <pre>{{$data}}</pre>
+
+    </section>
+
+</main>
+
+<script src="https://unpkg.com/vue"></script>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
