@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamic Components</title>
+    <meta name="description" content="Dynamic Components">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        main {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        main section {
+            flex: 1 1 auto;
+            padding: 1.5rem;
+            border: 0.05rem solid;
+        }
+
+        section:nth-child(2) {
+            background: cornsilk;
+        }
+
+    </style>
+</head>
+<body>
+
+<main>
+
+    <section>
+
+        <h2>Select component</h2>
+
+        <button @click="selected = 'tasks-list'">Show Tasks</button>
+        <button @click="selected = 'contact'">Show Contact</button>
+        <button @click="selected = 'bio'">Show Bio</button>
+
+        <hr>
+
+        <component :is="selected"></component>
+
+    </section>
+
+    <section>
+
+        <h2>Data</h2>
+        <pre>{{$data}}</pre>
+
+    </section>
+
+</main>
+
+<script src="https://unpkg.com/vue"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
