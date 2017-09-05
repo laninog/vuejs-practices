@@ -1,7 +1,7 @@
 {
   "name": "07-event-communication",
   "version": "1.0.0",
-  "description": "Vuejs components properties",
+  "description": "Vuejs event communication",
   "author": "Alejandro Niño <alejandro6230@gmail.com>",
   "main": "index.html",
   "scripts": {
