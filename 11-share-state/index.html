@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Share State</title>
+    <meta name="description" content="Share State">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        main {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        main section {
+            flex: 1 1 auto;
+            padding: 1.5rem;
+            border: 0.05rem solid;
+        }
+
+        section:nth-child(2) {
+            background: cornsilk;
+        }
+
+        ul {
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+
+<main>
+
+    <section>
+
+        <h2>Employees</h2>
+        <div id="names">
+            <h5 v-for="n in names">{{n}}</h5>
+        </div>
+
+        <h2>Roles</h2>
+        <div id="roles">
+            <h5 v-for="r in roles">{{r}}</h5>
+        </div>
+
+    </section>
+
+    <section>
+
+        <h2>Data</h2>
+        <pre>Shared</pre>
+
+    </section>
+
+</main>
+
+<script src="https://unpkg.com/vue"></script>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
