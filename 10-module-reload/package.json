@@ -1,6 +1,6 @@
 {
   "name": "10-module-reload",
-  "description": "Vue.js module reload",
+  "description": "Vuejs module reload",
   "version": "1.0.0",
   "author": "Alejandro Niño <alejandro6230@gmail.com>",
   "private": true,

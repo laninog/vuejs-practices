@@ -1,6 +1,6 @@
 {
   "name": "09-vue-cli-components",
-  "description": "A Vue.js project",
+  "description": "Create components with vue-cli",
   "version": "1.0.0",
   "author": "Alejandro Niño <alejandro6230@gmail.com>",
   "private": true,
